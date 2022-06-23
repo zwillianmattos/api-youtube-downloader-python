@@ -1,0 +1,8 @@
+Flask
+Flask-Admin
+Flask-RESTful
+Flask-Script
+pydantic
+Manager
+Werkzeug
+pytube
