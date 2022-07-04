@@ -6,3 +6,4 @@ pydantic
 Manager
 Werkzeug
 pytube
+flask_cors

@@ -7,10 +7,10 @@ import os
 class VideoDownloader(Resource):
 
     def get(self, id):
-        url =YouTube(str("https://www.youtube.com/watch?v=" + id))
+        url = YouTube(str("https://www.youtube.com/watch?v=" + id))
 
         streams = []
-        for stream in url.streams.all():
+        for stream in url.streams.filter(progressive=True):
             streams.append({ "itag": stream.itag, "mime_type": stream.mime_type, "resolution": stream.resolution})
         
         return streams
