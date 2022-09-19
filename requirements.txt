@@ -7,3 +7,4 @@ Manager
 Werkzeug
 pytube
 flask_cors
+gunicorn
